@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Founders — Alex &amp; Lila</title>
+  <style>
+    :root {
+      --bg: #04070f;
+      --bg-2: #0a1428;
+      --gold: #e0a64a;
+      --gold-2: #ffe27a;
+      --teal: #5fe6d6;
+      --ink: #f4ecd8;
+      --muted: #9fd9d2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 700px at 20% 10%, #14264a 0%, transparent 60%),
+        radial-gradient(900px 600px at 90% 90%, #0e3f3a 0%, transparent 60%),
+        var(--bg);
+      min-height: 100vh;
+    }
+    header.hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 48px 24px 8px;
+      text-align: center;
+    }
+    .eyebrow {
+      letter-spacing: 6px;
+      color: var(--muted);
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: clamp(28px, 4.4vw, 56px);
+      margin: 8px 0 4px;
+      color: var(--gold-2);
+      letter-spacing: 2px;
+    }
+    .tag {
+      color: var(--muted);
+      font-style: italic;
+      margin: 0 auto 16px;
+      max-width: 720px;
+    }
+    .portrait {
+      max-width: 1200px;
+      margin: 8px auto 24px;
+      padding: 0 16px;
+    }
+    .portrait img, .portrait svg, .portrait object {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid rgba(224,166,74,0.3);
+      border-radius: 12px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+      background: #04070f;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(10,20,40,0.85), rgba(4,7,15,0.85));
+      border: 1px solid rgba(95,230,214,0.18);
+      border-radius: 14px;
+      padding: 20px 22px;
+    }
+    .card h2 {
+      margin: 0 0 8px;
+      color: var(--gold-2);
+      font-size: 18px;
+      letter-spacing: 1.5px;
+    }
+    .card p, .card li {
+      color: #d9e7e5;
+      line-height: 1.55;
+      font-size: 15px;
+    }
+    .card ul { margin: 6px 0 0 18px; padding: 0; }
+    footer {
+      text-align: center;
+      padding: 28px 16px 48px;
+      color: var(--muted);
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="eyebrow">Afro-futurist · AI &amp; Software · North America ↔ Africa</div>
+    <h1>Meet the Founders — Alex &amp; Lila</h1>
+    <p class="tag">Driving business between North America and Africa with AI-led, software-centred services and cost-efficient delivery.</p>
+  </header>
+
+  <section class="portrait">
+    <object type="image/svg+xml" data="founders.svg" aria-label="Stylized illustration of founders Alex and Lila">
+      <img src="founders.svg" alt="Stylized illustration of founders Alex and Lila"/>
+    </object>
+  </section>
+
+  <main>
+    <article class="card">
+      <h2>CRM &amp; Finance — Odoo Partnership</h2>
+      <ul>
+        <li>Accounting</li>
+        <li>Loan management</li>
+        <li>BNPL management</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h2>Clinical Trial Services</h2>
+      <ul>
+        <li>Site monitoring</li>
+        <li>Customer support</li>
+        <li>User access management</li>
+        <li>Regulatory submission support</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h2>Process Optimization</h2>
+      <p>Business process optimization and automation, leveraging deep technology expertise for cost-efficient implementation and services.</p>
+    </article>
+  </main>
+
+  <footer>BUILT WITH PURPOSE · BRIDGING CONTINENTS</footer>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Alex and Lila — Afro-futuristic Founders</title>
+  <desc id="desc">Stylized side-by-side portraits of the two founders, Alex and Lila, in an Afro-futuristic illustration style with geometric circuit motifs and kente-inspired patterning.</desc>
+
+  <defs>
+    <!-- Background gradient: deep night sky to indigo -->
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#0f1f3a"/>
+      <stop offset="55%" stop-color="#0a1428"/>
+      <stop offset="100%" stop-color="#04070f"/>
+    </radialGradient>
+
+    <!-- Skin tones -->
+    <linearGradient id="skinA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a4626"/>
+      <stop offset="100%" stop-color="#3f1f10"/>
+    </linearGradient>
+    <linearGradient id="skinL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a5230"/>
+      <stop offset="100%" stop-color="#4a2614"/>
+    </linearGradient>
+
+    <!-- Gold accents -->
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe27a"/>
+      <stop offset="50%" stop-color="#e0a64a"/>
+      <stop offset="100%" stop-color="#8a5a18"/>
+    </linearGradient>
+
+    <!-- Teal glow -->
+    <radialGradient id="teal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5fe6d6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0e6f6a" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Kente pattern -->
+    <pattern id="kente" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#1a0f06"/>
+      <rect x="0" y="0" width="40" height="6" fill="#e0a64a"/>
+      <rect x="0" y="14" width="40" height="3" fill="#9b1b1b"/>
+      <rect x="0" y="22" width="40" height="6" fill="#0a6e5a"/>
+      <rect x="0" y="34" width="40" height="3" fill="#e0a64a"/>
+      <rect x="6" y="6" width="6" height="8" fill="#9b1b1b"/>
+      <rect x="20" y="6" width="6" height="8" fill="#0a6e5a"/>
+      <rect x="6" y="28" width="6" height="6" fill="#e0a64a"/>
+      <rect x="22" y="28" width="6" height="6" fill="#9b1b1b"/>
+    </pattern>
+
+    <!-- Circuit grid -->
+    <pattern id="circuit" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M0 30 H60 M30 0 V60" stroke="#1f4e7a" stroke-width="0.6" stroke-opacity="0.4"/>
+      <circle cx="30" cy="30" r="1.5" fill="#5fe6d6" opacity="0.7"/>
+      <circle cx="0" cy="0" r="1" fill="#e0a64a" opacity="0.6"/>
+    </pattern>
+
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect width="1200" height="700" fill="url(#circuit)"/>
+
+  <!-- Africa silhouette accent (stylized) -->
+  <g opacity="0.12" transform="translate(540 160) scale(0.55)">
+    <path d="M120,20 C200,10 280,40 300,140 C320,230 280,300 320,360 C340,400 300,470 240,470 C180,470 160,420 120,420 C70,420 40,360 70,300 C20,260 30,180 80,120 C95,80 95,40 120,20 Z" fill="#5fe6d6"/>
+  </g>
+
+  <!-- Soft glow halos behind portraits -->
+  <circle cx="370" cy="330" r="240" fill="url(#teal)"/>
+  <circle cx="830" cy="330" r="240" fill="url(#teal)"/>
+
+  <!-- ALEX — left portrait -->
+  <g transform="translate(370 340)">
+    <!-- Shoulders / kente collar -->
+    <path d="M-200,260 C-160,160 -80,140 0,140 C80,140 160,160 200,260 L200,300 L-200,300 Z" fill="url(#kente)"/>
+    <path d="M-200,260 C-160,160 -80,140 0,140 C80,140 160,160 200,260 L200,300 L-200,300 Z" fill="none" stroke="url(#gold)" stroke-width="3"/>
+
+    <!-- Neck -->
+    <path d="M-30,120 L30,120 L40,170 L-40,170 Z" fill="url(#skinA)"/>
+
+    <!-- Head -->
+    <ellipse cx="0" cy="20" rx="120" ry="140" fill="url(#skinA)"/>
+
+    <!-- Hair: high fade with geometric line-up -->
+    <path d="M-122,-30 C-130,-150 -60,-180 0,-180 C60,-180 130,-150 122,-30 C120,-50 80,-80 0,-80 C-80,-80 -120,-50 -122,-30 Z" fill="#1a0a06"/>
+    <path d="M-110,-40 L110,-40" stroke="#0a0503" stroke-width="3"/>
+
+    <!-- Brow -->
+    <path d="M-70,-10 Q-40,-20 -10,-10" stroke="#1a0a06" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M70,-10 Q40,-20 10,-10" stroke="#1a0a06" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+    <!-- Eyes -->
+    <ellipse cx="-40" cy="20" rx="14" ry="8" fill="#fff"/>
+    <ellipse cx="40" cy="20" rx="14" ry="8" fill="#fff"/>
+    <circle cx="-40" cy="20" r="6" fill="#3a1f0a"/>
+    <circle cx="40" cy="20" r="6" fill="#3a1f0a"/>
+    <circle cx="-38" cy="18" r="2" fill="#fff"/>
+    <circle cx="42" cy="18" r="2" fill="#fff"/>
+
+    <!-- Nose -->
+    <path d="M0,30 L-10,70 Q0,78 10,70 Z" fill="#3f1f10" opacity="0.6"/>
+
+    <!-- Mustache + beard (trimmed) -->
+    <path d="M-40,90 Q0,100 40,90 Q30,100 0,102 Q-30,100 -40,90 Z" fill="#1a0a06"/>
+    <path d="M-55,95 Q0,140 55,95 Q40,135 0,140 Q-40,135 -55,95 Z" fill="#1a0a06" opacity="0.85"/>
+
+    <!-- Mouth -->
+    <path d="M-18,108 Q0,118 18,108" stroke="#2a0f06" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Ear with HUD earring -->
+    <path d="M120,30 Q138,40 130,70 Q120,80 110,70 Z" fill="#3f1f10"/>
+    <circle cx="128" cy="78" r="4" fill="url(#gold)"/>
+
+    <!-- Glasses: AR-style HUD -->
+    <g filter="url(#glow)">
+      <rect x="-72" y="0" width="64" height="36" rx="8" fill="none" stroke="#5fe6d6" stroke-width="2"/>
+      <rect x="8"  y="0" width="64" height="36" rx="8" fill="none" stroke="#5fe6d6" stroke-width="2"/>
+      <line x1="-8" y1="14" x2="8" y2="14" stroke="#5fe6d6" stroke-width="2"/>
+      <line x1="-72" y1="14" x2="-90" y2="10" stroke="#5fe6d6" stroke-width="2"/>
+      <line x1="72" y1="14" x2="90" y2="10" stroke="#5fe6d6" stroke-width="2"/>
+      <!-- HUD ticks -->
+      <line x1="-60" y1="30" x2="-20" y2="30" stroke="#5fe6d6" stroke-width="1"/>
+      <line x1="20" y1="30" x2="60" y2="30" stroke="#5fe6d6" stroke-width="1"/>
+    </g>
+
+    <!-- Name plate -->
+    <g transform="translate(0 330)">
+      <rect x="-130" y="-22" width="260" height="44" rx="22" fill="#0a1428" stroke="url(#gold)" stroke-width="2"/>
+      <text x="0" y="6" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#ffe27a" letter-spacing="3">ALEX</text>
+    </g>
+  </g>
+
+  <!-- LILA — right portrait -->
+  <g transform="translate(830 340)">
+    <!-- Shoulders / wrap -->
+    <path d="M-200,260 C-160,160 -80,140 0,140 C80,140 160,160 200,260 L200,300 L-200,300 Z" fill="url(#kente)"/>
+    <path d="M-200,260 C-160,160 -80,140 0,140 C80,140 160,160 200,260 L200,300 L-200,300 Z" fill="none" stroke="url(#gold)" stroke-width="3"/>
+
+    <!-- Neck -->
+    <path d="M-30,120 L30,120 L40,170 L-40,170 Z" fill="url(#skinL)"/>
+
+    <!-- Geometric gold collar / necklace -->
+    <g>
+      <path d="M-80,170 Q0,210 80,170" stroke="url(#gold)" stroke-width="3" fill="none"/>
+      <circle cx="0" cy="200" r="10" fill="url(#gold)"/>
+      <circle cx="0" cy="200" r="4" fill="#0a1428"/>
+      <circle cx="-30" cy="190" r="4" fill="url(#gold)"/>
+      <circle cx="30" cy="190" r="4" fill="url(#gold)"/>
+    </g>
+
+    <!-- Head -->
+    <ellipse cx="0" cy="20" rx="120" ry="140" fill="url(#skinL)"/>
+
+    <!-- Headwrap (gele) -->
+    <path d="M-130,-40 C-150,-160 -80,-200 0,-200 C90,-200 160,-150 130,-40 C120,-70 80,-90 0,-90 C-80,-90 -120,-70 -130,-40 Z" fill="#9b1b1b"/>
+    <path d="M-130,-40 C-110,-90 -40,-110 0,-100 C70,-90 130,-60 130,-40 C100,-80 50,-100 0,-100 C-60,-100 -110,-80 -130,-40 Z" fill="#e0a64a"/>
+    <path d="M-110,-60 C-60,-130 60,-130 110,-60" stroke="url(#gold)" stroke-width="3" fill="none"/>
+    <!-- Wrap fold accents -->
+    <path d="M-90,-100 Q-30,-160 30,-150" stroke="#5b0e0e" stroke-width="2" fill="none"/>
+    <path d="M40,-160 Q90,-130 110,-80" stroke="#5b0e0e" stroke-width="2" fill="none"/>
+
+    <!-- Brow -->
+    <path d="M-65,-5 Q-40,-18 -15,-8" stroke="#2a0f06" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M65,-5 Q40,-18 15,-8" stroke="#2a0f06" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+    <!-- Eyes (with subtle teal liner) -->
+    <ellipse cx="-40" cy="22" rx="15" ry="8" fill="#fff"/>
+    <ellipse cx="40" cy="22" rx="15" ry="8" fill="#fff"/>
+    <circle cx="-40" cy="22" r="6" fill="#3a1f0a"/>
+    <circle cx="40" cy="22" r="6" fill="#3a1f0a"/>
+    <circle cx="-38" cy="20" r="2" fill="#fff"/>
+    <circle cx="42" cy="20" r="2" fill="#fff"/>
+    <path d="M-55,16 Q-40,8 -25,16" stroke="#5fe6d6" stroke-width="1.5" fill="none"/>
+    <path d="M55,16 Q40,8 25,16" stroke="#5fe6d6" stroke-width="1.5" fill="none"/>
+
+    <!-- Cheek highlight -->
+    <ellipse cx="-70" cy="60" rx="14" ry="8" fill="#a3673f" opacity="0.5"/>
+    <ellipse cx="70" cy="60" rx="14" ry="8" fill="#a3673f" opacity="0.5"/>
+
+    <!-- Nose -->
+    <path d="M0,32 L-10,72 Q0,80 10,72 Z" fill="#3f1f10" opacity="0.55"/>
+
+    <!-- Lips -->
+    <path d="M-22,108 Q0,98 22,108 Q0,122 -22,108 Z" fill="#7a1f2a"/>
+    <path d="M-22,108 Q0,114 22,108" stroke="#3a0a10" stroke-width="1.5" fill="none"/>
+
+    <!-- Earring: gold ankh-inspired -->
+    <g transform="translate(118 70)">
+      <circle r="6" fill="url(#gold)"/>
+      <path d="M0,6 L0,30 M-8,18 L8,18" stroke="url(#gold)" stroke-width="2"/>
+    </g>
+
+    <!-- Tribal/circuit mark on temple -->
+    <g stroke="url(#gold)" stroke-width="1.5" fill="none" opacity="0.85">
+      <path d="M-95,30 L-78,22 L-78,12"/>
+      <circle cx="-78" cy="10" r="2" fill="url(#gold)"/>
+    </g>
+
+    <!-- Name plate -->
+    <g transform="translate(0 330)">
+      <rect x="-130" y="-22" width="260" height="44" rx="22" fill="#0a1428" stroke="url(#gold)" stroke-width="2"/>
+      <text x="0" y="6" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#ffe27a" letter-spacing="3">LILA</text>
+    </g>
+  </g>
+
+  <!-- Floating circuit nodes between them -->
+  <g stroke="#5fe6d6" stroke-width="1" fill="none" opacity="0.7">
+    <path d="M510,330 Q600,260 690,330"/>
+    <path d="M510,360 Q600,430 690,360"/>
+    <circle cx="600" cy="295" r="3" fill="#5fe6d6"/>
+    <circle cx="600" cy="395" r="3" fill="#5fe6d6"/>
+  </g>
+
+  <!-- Top header -->
+  <g transform="translate(600 60)">
+    <text text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#ffe27a" letter-spacing="6">FOUNDERS</text>
+    <text y="32" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#9fd9d2" letter-spacing="4">AFRO-FUTURIST · AI &amp; SOFTWARE · NORTH AMERICA ↔ AFRICA</text>
+  </g>
+
+  <!-- Bottom corner adinkra-inspired marks -->
+  <g fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.7">
+    <circle cx="60" cy="640" r="18"/>
+    <path d="M48,640 H72 M60,628 V652"/>
+    <circle cx="1140" cy="640" r="18"/>
+    <path d="M1128,640 Q1140,620 1152,640 Q1140,660 1128,640 Z"/>
+  </g>
+</svg>
